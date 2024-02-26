@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        //Excuta as migrations
         \App\Models\User::factory(20)->create();
         \App\Models\Invoice::factory(20)->create();
 
